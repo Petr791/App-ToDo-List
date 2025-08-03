@@ -8866,7 +8866,7 @@
 			enumerable: !0,
 			get: t[r]
 		})
-	}, n.f = {}, n.e = e => Promise.all(Object.keys(n.f).reduce((t, r) => (n.f[r](e, t), t), [])), n.u = e => "/static/js/" + e + ".b3ea5aa2.chunk.js", n.miniCssF = e => {}, n.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), (() => {
+	}, n.f = {}, n.e = e => Promise.all(Object.keys(n.f).reduce((t, r) => (n.f[r](e, t), t), [])), n.u = e => "./static/js/" + e + ".b3ea5aa2.chunk.js", n.miniCssF = e => {}, n.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), (() => {
 		var e = {},
 			t = "todos:";
 		n.l = (r, l, a, o) => {
