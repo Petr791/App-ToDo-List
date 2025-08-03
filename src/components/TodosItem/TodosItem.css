@@ -1,0 +1,170 @@
+.todo-item {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+}
+
+.todo-item::after {
+    content: "";
+    width: 95%;
+    height: 1px;
+    background-color: #00999920;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+/*  */
+
+.todo-item__checkbox {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Сброс стандартного оформления чекбокса */
+
+.todo-item__input {
+    /* для поддержки в Safari */
+    -webkit-appearance: none;
+    appearance: none;
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    border: 1px solid #009999;
+    border-radius: 50%;
+    transition: all 0.15s linear;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+/* Оформление состояния checked */
+
+.todo-item__input:checked {
+    background-color: #009999;
+    border-color: #009999;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+
+
+/* Эффект нажатия */
+
+.todo-item__input:active {
+    filter: brightness(90%);
+}
+
+
+/* Смена цвета границы при наведении */
+
+.todo-item__input:hover:not(:disabled) {
+    border-color: #009999;
+    box-shadow: 0 0 0 0.25rem rgba(0, 153, 153, 0.119);
+}
+
+
+/* Стили для чекбокса при фокусе */
+
+
+/* .todo-item__input:focus {
+    border-color: #009999;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(0, 153, 153, 0.119);
+}
+ */
+
+
+/*  */
+
+.todo-item__title {
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #2c2c2c;
+    text-align: left;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.todo-item__title_done {
+    color: #009999;
+    text-decoration: line-through;
+    text-decoration-color: #009999;
+    opacity: 0.2;
+}
+
+
+/*  */
+
+.todo-item__delete-btn {
+    margin-left: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #0099992f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.todo-item__delete-btn:active {
+    background-color: #009999;
+}
+
+.todo-item__delete-btn:hover {
+    border: 1px solid #009999;
+    box-shadow: 0 0 0 0.25rem rgba(0, 153, 153, 0.119);
+}
+
+.todo-item__delete-btn:hover svg {
+    fill: "#eeeeee";
+    fill: "red";
+    color: rebeccapurple;
+    width: 50px;
+}
+
+@media (max-width: 565px) {
+    .todo-item::after {
+        width: 100%;
+    }
+    .todo-item__title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .todo-item__checkbox {
+        margin-right: 2px;
+    }
+    .todo-item__title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 350px) {
+    .todo-item {
+        column-gap: 4px;
+    }
+    .todo-item__title {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

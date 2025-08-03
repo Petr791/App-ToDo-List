@@ -1,0 +1,33 @@
+.todos__title {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #009999;
+    text-align: center;
+}
+
+.error-message {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fa0101;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .todos__title {
+        margin-bottom: 13px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 350px) {
+    .todos__title {
+        margin-bottom: 7px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

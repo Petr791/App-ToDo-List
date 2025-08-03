@@ -1,0 +1,29 @@
+.add-todo {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+.add-todo__input-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 767px) {
+    .add-todo {
+        margin-bottom: 40px;
+    }
+    .add-todo__input-wrapper {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 565px) {
+    .add-todo {
+        margin-bottom: 32px;
+    }
+}
