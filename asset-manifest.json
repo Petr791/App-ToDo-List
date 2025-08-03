@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0033ef7c.css",
+    "main.js": "/static/js/main.177956ed.js",
+    "static/js/453.b3ea5aa2.chunk.js": "/static/js/453.b3ea5aa2.chunk.js",
+    "static/media/bg-image.jpg": "/static/media/bg-image.8d93da2ed5062c664aa5.jpg",
+    "static/media/Geologica-Bold.ttf": "/static/media/Geologica-Bold.c6ce4bebb6d16febc926.ttf",
+    "static/media/Geologica-SemiBold.ttf": "/static/media/Geologica-SemiBold.43d1f5cbef7e04aa3189.ttf",
+    "static/media/Geologica-Medium.ttf": "/static/media/Geologica-Medium.511acc58d4902dba7b58.ttf",
+    "static/media/Geologica-Light.ttf": "/static/media/Geologica-Light.1d07a80c29574f217c3c.ttf",
+    "static/media/Geologica-Regular.ttf": "/static/media/Geologica-Regular.e13272ec36b0a96fc89c.ttf",
+    "index.html": "/index.html",
+    "main.0033ef7c.css.map": "/static/css/main.0033ef7c.css.map",
+    "main.177956ed.js.map": "/static/js/main.177956ed.js.map",
+    "453.b3ea5aa2.chunk.js.map": "/static/js/453.b3ea5aa2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0033ef7c.css",
+    "static/js/main.177956ed.js"
+  ]
+}
