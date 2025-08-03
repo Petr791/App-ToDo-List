@@ -1,6 +1,6 @@
 # React-приложение "Список задач"
 
-[Ссылка на страницу с приложением:](https://petr791.github.io/App-ToDo-List/)  
+[Ссылка на страницу с приложением](https://petr791.github.io/App-ToDo-List/)  
 
 **Описание:**
 
