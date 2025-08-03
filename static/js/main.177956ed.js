@@ -8952,7 +8952,7 @@
 	}
 	const c = function (e, t, n) {
 		if (a.randomUUID && !t && !e) return a.randomUUID();
-		const r = (e = e || {}).random ? ? e.rng ? .() ? ? function () {
+		const r = (e = e || {}).random ??e.rng?.()?? function () {
 			if (!o) {
 				if ("undefined" === typeof crypto || !crypto.getRandomValues) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
 				o = crypto.getRandomValues.bind(crypto)
